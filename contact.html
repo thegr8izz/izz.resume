@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact</title>
+  <link rel="icon" type="image/x-icon" href="iR.png">
+
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url('secbg.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+    #navbar {
+      background-color: #333;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  display: block;
+z-index: 1000;
+  transition: top 0.3s;
+    }
+
+    #navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    #navbar a:hover {
+      background-color: cornsilk;
+      color: black;
+    }
+
+
+    .page-title {
+      font-family: Cinzel Decorative, serif;
+      font-size: 64px;
+      color: cornsilk;
+      text-align: center;
+      margin: 80px 0 40px;
+    }
+
+  
+    .contact-container {
+      background-color: cornsilk;
+      max-width: 600px;
+      margin: 0 auto 40px;
+      padding: 30px;
+      border-radius: 8px;
+      box-sizing: border-box;
+    }
+
+    .contact-container h2 {
+      color: #5A3E34;
+      margin-top: 0;
+    }
+
+    .contact-container label {
+      display: block;
+      margin-top: 15px;
+      color: #5A3E34;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    .contact-container input,
+    .contact-container textarea {
+      width: 100%;
+      padding: 8px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .contact-container textarea {
+      height: 100px;
+    }
+
+    .contact-container button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .contact-container button:hover {
+      background-color: #e9e9e9;
+    }
+
+    .contact-container hr {
+      margin: 25px 0;
+      border: 0;
+      border-top: 1px solid #ddd;
+    }
+
+    .contact-section h3 {
+      color: #5A3E34;
+      margin: 25px 0 15px;
+    }
+
+    .contact-item {
+      margin: 15px 0;
+      color: #5A3E34;
+    }
+
+    .contact-item a {
+      text-decoration: underline;
+      color: inherit;
+    }
+
+    .contact-item a:hover {
+      text-decoration: none;
+    }
+
+    .whatsapp { color: green; }
+    .instagram { color: #C13584; }
+    .tiktok { color: #00F2EA; }
+
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+.logo-img {
+  position: absolute;
+  right: 20px;
+  top: 3px;
+  width: 110px;
+  height: auto;
+  object-fit: contain;
+  </style>
+</head>
+
+<body>
+
+  <div id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="education.html">Education</a>
+    <a href="skills.html">Skills & Extra-Curricular</a>
+    <a href="job experience.html">Job Experience</a>
+    <a href="hobby.html">Hobby</a>
+    <a href="contact.html">Contact</a>
+<img src="logooo.png" class="logo-img">
+  </div>
+
+
+  <div class="page-title">Contact</div>
+  <div class="contact-container">
+    <center>
+<h2>Send Message</h2></center>
+
+
+    <label for="nama">Name</label>
+    <input type="text" id="nama" name="nama" required>
+
+    <label for="email">E-mail</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="pesan">Message</label>
+    <textarea id="pesan" name="pesan" required></textarea>
+<center>
+    <button type="submit">SEND</button></center>
+
+    <hr>
+<center>
+
+    <div class="contact-section">
+      <h3>Contact Directly</h3>
+
+
+      <div class="contact-item">
+        <span>WhatsApp</span><br>
+        <a href="https://api.whatsapp.com/send?phone=601162036215&text=hi%20izzairi%20!" target="_blank" class="whatsapp">+60 11-6203 6215</a>
+      </div>
+
+      <div class="contact-item">
+        <span>Instagram</span><br>
+        <a href="https://instagram.com/i0804x" target="_blank" class="instagram">@izzrsln</a>
+      </div>
+
+      <div class="contact-item">
+        <span>TikTok</span><br>
+        <a href="https://tiktok.com/@i0804x" target="_blank" class="tiktok">@izzairii</a>
+</center>
+
+      </div>
+    </div>
+  </div>
+
+  
+  <script>
+    window.onscroll = function() {
+      scrollFunction();
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-50px";
+      }
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+
+
+<center>
+
+<div class="copyright" style="color: white; text-align: center; margin: 40px 0; font-size: 14px;">
+    Copyright © 2025 Izzairi Roslan
+</div>
+
